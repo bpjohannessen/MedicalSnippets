@@ -1,2 +1,2 @@
 # MedicalSnippets
-Snippets for Visual Studio Code
+Snippets for text editors, such as Visual Studio Code.
