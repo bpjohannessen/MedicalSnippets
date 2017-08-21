@@ -1,0 +1,27 @@
+{
+	"liver": {
+		"prefix": "lab-liver-ext",
+		"body": [
+			"Name | Range | Unit | Comment",
+			"---- | ----- | ---- | -------",
+			"ALAT | 20-60 | IU/L | Liver function test",
+			"ASAT | 6-34, 8-40 | IU/L | Male/female. Liver function test",
+			"GTT | 0-30 | IU/L | ",
+			"ALP | 35-105 | U/L | Differs in children",
+			"Direct bilirubin | 0.1-0.4 | mg/dL | ",
+			"Total bilirubin | 0.2-1.2 | mg/dL |"
+		],
+		"description": "Extended liver lab tests"
+	},
+	"pancreas": {
+		"prefix": "lab-pancreas",
+		"body": [
+			"Name | Range | Unit | Comment",
+			"---- | ----- | ---- | -------",
+			"Amylase, serum | 40-140 | U/L | ",
+			"Lipase | 0-50 | U/L | "
+		],			
+		"description": "Pancreas lab tests"
+	} 
+}
+}
