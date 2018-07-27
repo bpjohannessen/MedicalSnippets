@@ -16,10 +16,12 @@ $bili = 64;
 $alat = 964;
 $gtt = 940;
 */
-$calc = $a + $b*$age + $c*$bilirubin + $d*$alat + $e*$gtt;
+$calc = $a + $b*@$age + $c*@$bilirubin + $d*@$alat + $e*@$gtt;
 
 if(@$_POST["submit"]==1) {
 echo $calc;
+} else {
+  echo "not submitted";
 }
 
 ?>
