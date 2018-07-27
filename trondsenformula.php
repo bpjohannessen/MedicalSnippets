@@ -18,7 +18,7 @@ $gtt = 940;
 */
 $calc = $a + $b*@$age + $c*@$bilirubin + $d*@$alat + $e*@$gtt;
 
-if(@$_POST["submit"]==1) {
+if($_SERVER['REQUEST_METHOD'] == 'POST')
 echo $calc;
 } else {
   echo "not submitted";
@@ -27,7 +27,7 @@ echo $calc;
 ?>
 
 <form action="?" method="POST">
-<input type="hidden" name="submit" value="1">
+
 <table>
 <tr><td>Age</td><td><input method="text" name="age"></td></tr>
 <tr><td>Bilirubin</td><td><input method="text" name="bilirubin"></td></tr>
