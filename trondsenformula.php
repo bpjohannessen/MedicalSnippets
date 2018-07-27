@@ -6,17 +6,17 @@ $c = 0.0260967;
 $d = 0.00832;
 $e = 0.0088144;
 
-$age = $_POST["age"];
-$bilirubin = $_POST["bilirubin"];
-$alat = $_POST["alat"];
-$gtt = $_POST["gtt"];
+$age = @$_POST["age"];
+$bilirubin = @$_POST["bilirubin"];
+$alat = @$_POST["alat"];
+$gtt = @$_POST["gtt"];
 /*
 $age = 48;
 $bili = 64;
 $alat = 964;
 $gtt = 940;
 */
-$calc = $a + $b*@$age + $c*@$bili + $d*@$alat + $e*@$gtt;
+$calc = $a + $b*$age + $c*$bili + $d*$alat + $e*$gtt;
 
 if(@$_POST["calc"]==1) {
 echo $calc;
