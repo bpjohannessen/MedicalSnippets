@@ -18,7 +18,7 @@ $gtt = 940;
 */
 $calc = $a + $b*@$age + $c*@$bilirubin + $d*@$alat + $e*@$gtt;
 
-if($_SERVER['REQUEST_METHOD'] == 'POST')
+if($_SERVER["REQUEST_METHOD"] == "POST")
 echo $calc;
 } else {
   echo "not submitted";
@@ -26,7 +26,7 @@ echo $calc;
 
 ?>
 
-<form action="?" method="POST">
+<form action="trondsenformula.php" method="POST">
 
 <table>
 <tr><td>Age</td><td><input method="text" name="age"></td></tr>
