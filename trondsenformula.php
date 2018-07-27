@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  
 <?php
 
 $a = -7.58525;
@@ -10,16 +17,11 @@ $age = @$_POST["age"];
 $bilirubin = @$_POST["bilirubin"];
 $alat = @$_POST["alat"];
 $gtt = @$_POST["gtt"];
-/*
-$age = 48;
-$bili = 64;
-$alat = 964;
-$gtt = 940;
-*/
-$calc = $a + $b*@$age + $c*@$bilirubin + $d*@$alat + $e*@$gtt;
 
-if($_SERVER["REQUEST_METHOD"] == "POST")
-echo $calc;
+$calc = $a + $b*$age + $c*$bilirubin + $d*$alat + $e*$gtt;
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+  echo $calc;
 } else {
   echo "not submitted";
 }
